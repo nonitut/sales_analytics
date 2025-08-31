@@ -60,6 +60,10 @@ if 'Дата' in data.columns:
 else:
     axes[2, 1].text(0.5, 0.5, "Столбец 'Дата' отсутствует", horizontalalignment='center', verticalalignment='center')
 
+plt.tight_layout()
+plt.savefig("plots.png", dpi=300)  # сохраняем все графики в один файл
+
+
 # Автоматическая настройка расположения графиков
 plt.tight_layout()
 plt.show()
